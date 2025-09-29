@@ -7,7 +7,7 @@ import curlArrow from '../../assets/Vector 17.svg'
 import techSoc from '../../assets/Group 44810.svg'
 import tarsSoc from '../../assets/Group 44818.svg'
 import circle from '../../assets/Ellipse 12.svg'
-
+import Button from '../buttons'
 function Bluefooter() {
   const buttons = ['Home', 'Events', 'Merch', 'Register']
 
@@ -30,18 +30,9 @@ function Bluefooter() {
           <div className="relative h-[8px] w-2/5 bg-[#4271FF] rounded-full"></div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5 w-auto p-2 font-aclinica ">
             {buttons.map(buttonText => (
-              <div key={buttonText} className="relative">
-                <div className="absolute top-[4px] left-[3px] w-full h-full bg-black rounded-full "></div>
-
-                <button
-                  className="relative w-full md:w-auto text-center px-[30px] py-[7px] 
-                         border-[1.5px] border-black rounded-full font-bold font-aclinica
-                         bg-[#F7FFD9] text-lg 
-                         transition-all duration-250 text-black hover:bg-[#D8FF40]   hover:scale-95"
-                >
-                  {buttonText}
-                </button>
-              </div>
+              <Button key={buttonText} className="mx-2 font-aclinica">
+                {buttonText}
+              </Button>
             ))}
           </div>
 
